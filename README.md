@@ -7,7 +7,7 @@ This project is divided into various steps:
    
 We went through each step thoroughly and the files have been arranged in the same way.
 
-Preprocessing
+Processing Data
 ==============
 * Curated BRCA data from TCGA using TCGABiolinks and it's many functions. Different forms of the same cohort's data was obtained, including gene expression, molecular subtypes, and clinical characteristics.
 * Obtained Indian breast cancer data from a study done by IISC. We included gene expression data as well as patient characteristics data. (https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE40206)
