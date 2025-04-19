@@ -1,4 +1,3 @@
-#trying out dea 
 #tcga
 tcga_gene <- t(tcga_gene_data)
 tcga_umap_data$Cluster <- ifelse(tcga_df$U2 < -5, 'Cluster1', 'Cluster2')
