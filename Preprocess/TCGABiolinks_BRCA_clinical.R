@@ -34,4 +34,4 @@ Clinical_Variables <- rownames(clinicalVariables) %>%
 Transposed_df <- as_tibble(t(Clinical_Variables), stringsAsFactors = F)
 Transposed_df[1,1] <- "Sample_ID"
 Transposed_df <- row_to_names(Transposed_df, 1, remove_row = TRUE, remove_rows_above = TRUE)
-write.csv(Transposed_df,"/Users/priyaltripathi/Documents/iit/TCGA-BRCA_clinical.csv", row.names = FALSE)
+write.csv(Transposed_df,"/Users/priyaltripathi/Multicluster Analysis/Preprocess/TCGA/TCGA-BRCA_clinical.csv", row.names = FALSE)
