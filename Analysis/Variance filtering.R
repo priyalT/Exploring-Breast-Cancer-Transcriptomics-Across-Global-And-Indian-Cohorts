@@ -3,8 +3,8 @@ library(dplyr)
 library(tibble)
 
 #Reaading the dataset into variables
-df_indian <- read.csv("/Users/priyaltripathi/iit/Intersection/Indian_intersect.csv")
-df_tcga <- read.csv("/Users/priyaltripathi/iit/Intersection/TCGA-BRCA_intersect.csv")
+df_indian <- read.csv("//Users/priyaltripathi/Multicluster Analysis/Preprocess/Intersection/Indian_intersect.csv")
+df_tcga <- read.csv("/Users/priyaltripathi/Multicluster Analysis/Preprocess/Intersection/TCGA-BRCA_intersect.csv")
 
 #variance-based filtering
 #indian
@@ -34,7 +34,7 @@ tcga_df <- df_tcga[, selected_columns]
 
 #including the patient characters in either both datasets
 #indian
-ind_char <- read.csv("/Users/priyaltripathi/iit/Indian/BRCA_Indian_patient_characteristics.csv")
+ind_char <- read.csv("/Users/priyaltripathi/Multicluster Analysis/Preprocess/Indian/BRCA_Indian_patient_characteristics.csv")
 ind_char <- ind_char[, c(4,5,6)]
 ind_char <- as.data.frame(ind_char)
 df_ind <- cbind(ind_df, ind_char)
