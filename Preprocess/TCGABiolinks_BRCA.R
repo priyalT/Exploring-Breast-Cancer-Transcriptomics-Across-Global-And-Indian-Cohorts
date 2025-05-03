@@ -42,4 +42,4 @@ df <- df %>%
   mutate(gender = data2$gender, Nodal_status = data2$ajcc_nodes_pathologic_pn, ER_status = data2$er_status_by_ihc, PR_status = data2$pr_status_by_ihc,
          HER_status = data2$her2_status_by_ihc, histological_type = data2$histological_type)
 
-write.csv(data,"/Users/priyaltripathi/Documents/iit/TCGA-BRCA_patient_characteristics.csv", row.names = FALSE)
+write.csv(data,"/Users/priyaltripathi/Multicluster Analysis/Preprocess/TCGA/TCGA-BRCA_patient_characteristics.csv", row.names = FALSE)
