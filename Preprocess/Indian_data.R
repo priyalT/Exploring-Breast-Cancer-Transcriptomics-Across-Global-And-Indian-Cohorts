@@ -1,7 +1,10 @@
 #Setting up the dataset
+#libraries
 library(GEOquery)
 library(dplyr)
 library (stringr)
+
+#Procuring and cleaning data
 gse <- getGEO("GSE40206", GSEMatrix = TRUE)
 expression_data <- exprs(gse[[1]])
 expression_data <- as.data.frame(expression_data)
@@ -36,9 +39,7 @@ characteristics <- characteristics %>%
          related_investigation_2 = tissue$characteristics_ch2.17, age = tissue$characteristics_ch2.9)
 colnames(characteristics) <- c("Patient_ID", "NOD_status", "ER_status", "PR_status", "HER_status", "follow_up_period", "diagnosis", "related_investigation", "related_investigation_2", "age")
 characteristics <- subset(characteristics, !(age == "size: 2.2x2x2.5" | age == "size: 5x4x2.5"))
-
 #write.csv(characteristics,"/Users/priyaltripathi/Documents/iit/BRCA_Indian_patient_characteristics.csv")
-
 
 
 #Making Table1
