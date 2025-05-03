@@ -26,7 +26,7 @@ sapply(expression_data, class)
 range(expression_data)
 expression_data<-as.data.frame(expression_data)
 rownames(expression_data) <- row_names
-#write.csv(expression_data,"/Users/priyaltripathi/Documents/iit/BRCA_Indian_Gene_data.csv")
+#write.csv(expression_data,"/Users/priyaltripathi/Multicluster Analysis/Preprocess/Indian/BRCA_Indian_Gene_data.csv")
 
 #Setting up the characteristics dataset
 tissue <- pData(gse[[1]])
@@ -39,7 +39,7 @@ characteristics <- characteristics %>%
          related_investigation_2 = tissue$characteristics_ch2.17, age = tissue$characteristics_ch2.9)
 colnames(characteristics) <- c("Patient_ID", "NOD_status", "ER_status", "PR_status", "HER_status", "follow_up_period", "diagnosis", "related_investigation", "related_investigation_2", "age")
 characteristics <- subset(characteristics, !(age == "size: 2.2x2x2.5" | age == "size: 5x4x2.5"))
-#write.csv(characteristics,"/Users/priyaltripathi/Documents/iit/BRCA_Indian_patient_characteristics.csv")
+#write.csv(characteristics,"/Users/priyaltripathi/Multicluster Analysis/Preprocess/Indian/BRCA_Indian_patient_characteristics.csv")
 
 
 #Making Table1
