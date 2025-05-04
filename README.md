@@ -94,7 +94,7 @@ Understanding the significance of UMAP clusters and Differential Expression Anal
   ![image](https://github.com/user-attachments/assets/1f5d070f-dda7-4c01-b38f-2f2fcdfc2cf9)
   ![image](https://github.com/user-attachments/assets/da236df5-a42c-49a4-afbc-630fa67cb58a)
 
-  Figure 3. UMAP plots of CFH, TMEM176A, DBNDD1, COPZ2, PRKAR2B expression of the global cohort, respectively. Color grading has been performed for the expression values. ***
+  Figure 3. UMAP plots of CFH, TMEM176A, DBNDD1, COPZ2, PRKAR2B expression of the global cohort, respectively. Color grading has been performed for the expression values. 
 
   ![image](https://github.com/user-attachments/assets/2d03b595-cd83-40a6-830a-f0e56819e601)
   ![image](https://github.com/user-attachments/assets/d8b04393-c908-446d-adf0-98bd04855c5b)
